@@ -16,6 +16,8 @@
     flex-direction: center;
     align-content: center;
 }
+.sides {
+}
 
 #center{
     display: flex;
@@ -90,4 +92,11 @@ nav div a:hover{
 .spaceMe {
     width: 95%;
     margin: 15px;
+}
+#background {
+    position: absolute;
+    z-index: -1;
+    background-color: red;
+    height: 100%;
+    width: 100%;
 }
