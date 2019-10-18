@@ -33,7 +33,6 @@ header{
 header h1 {
     text-align: center;
     color: blue;
-    background-color: white;
 }
 .stickTheNav{
     position: fixed;
@@ -41,6 +40,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
+    background: none;
 }
 nav div{
     background-color: yellow;
@@ -49,12 +49,12 @@ nav div:hover{
     background-color: white;
 }
 nav div a{
-    color: black;
+    color: blue;
     text-decoration: none;
     margin: 15px;
 }
 nav div a:hover{
-    color: black;
+    color: blue;
     text-decoration: none;
 }
 #news {
@@ -68,6 +68,7 @@ nav div a:hover{
     color: red;
 }
 #news h3 {
+    color: blue;
     font-size: 18px;
 }
 p {
@@ -79,7 +80,7 @@ p {
 }
 .buttonLink:hover {
     text-decoration: none;
-    color: black;
+    color: blue;
     background-color: white;
 }
 .buttonLink {
@@ -104,22 +105,40 @@ p {
     overflow: hidden;
 }
 .backShape {
-    width: 300px;
+    position: absolute;
+    width: 250px;
 }
-@keyframes rt {
+@keyframes rt1 {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg)}
 }
-@keyframes bt {
+@keyframes rt2 {
+    from {margin-left:10%;}
+    to{margin-right:20%;}
+}
+@keyframes yr {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg)}
+    from {margin-top: 100px;}
+    to {margin-top: 250px;}
+}
+@keyframes bc {
+    from {margin-top: 330px;}
+    to {margin-top: 500px;}
 }
 #rt {
-    margin-left: 60%;
-    animation: rt 18s linear 0s infinite;
+    margin-left: 10%;
+    margin-top: 25px;
+    animation: rt1 17s linear 0s infinite;
 }
-#bt {
-    width: 100px;
-    margin-right: 60%;
-    animation: bt 30s linear 0s infinite reverse;
+#rt2 {
+    animation: rt2 21s ease-in-out 0s infinite alternate;
+}
+#yr {
+    width: 110px;
+    right: 60%;
+    animation: yr 30s linear 0s infinite alternate-reverse;
+}
+#bc {
+    animation: bc 2.5s ease-in-out 0s infinite alternate;
 }
