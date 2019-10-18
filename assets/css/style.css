@@ -70,9 +70,12 @@ nav div a:hover{
 #news h3 {
     font-size: 18px;
 }
+p {
+    color: blue;;
+}
 .pageImg {
     width: 350px;
-    padding: 15px;
+    padding-top: 15px;
 }
 .buttonLink:hover {
     text-decoration: none;
@@ -96,7 +99,27 @@ nav div a:hover{
 #background {
     position: absolute;
     z-index: -1;
-    background-color: red;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+.backShape {
+    width: 300px;
+}
+@keyframes rt {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+}
+@keyframes bt {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+}
+#rt {
+    margin-left: 60%;
+    animation: rt 18s linear 0s infinite;
+}
+#bt {
+    width: 100px;
+    margin-right: 60%;
+    animation: bt 30s linear 0s infinite reverse;
 }
