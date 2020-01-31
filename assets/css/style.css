@@ -72,7 +72,27 @@ nav div a:hover{
     font-size: 18px;
 }
 p {
-    color: blue;;
+    color: blue;
+}
+a {
+    color: blue;
+}
+.listenBox {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.listenBox:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+    color: black;
+    text-decoration: none;
+}
+.listenLink {
+    padding: 25px;
+}
+.listenLink:hover {
+    color: black;
 }
 .pageImg {
     width: 350px;
@@ -100,7 +120,7 @@ p {
 #background {
     position: absolute;
     z-index: -1;
-    height: 100%;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 }
