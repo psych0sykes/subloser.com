@@ -2,10 +2,11 @@ export default function ListenButton(props){
 
     const hStyle = {
         color: props.color,
+        fontSize: "30px",
     }
 
     return(
-        <a className="listenButton" href="https://open.spotify.com/artist/2eGR1MENSdFUpHZ4x5wIri?autoplay=true&v=A">
+        <a className="listenButton" href={props.link}>
                     <div style={hStyle}>{props.children}</div>
         </a>
     )
