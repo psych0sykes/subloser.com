@@ -12,6 +12,10 @@ body{
     margin-top: 5vh;
     box-shadow: 0px 5px #ccc;
 }
+.listenButton:hover{
+    border: 3px solid #333;
+    box-shadow: 0px 5px #111;
+}
 a {
     text-decoration: none;
 }
