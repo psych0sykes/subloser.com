@@ -1,6 +1,7 @@
 import ListenButton from "./../components/ListenButton";
 import Section from "./../components/Section";
 import Navbar from "./../components/Navbar";
+import SocialLinks from "../components/SocailLinks";
 
 export default function Home() {
   return(
@@ -24,6 +25,11 @@ export default function Home() {
           youtube
         </ListenButton>
       </Section>
+      <div style={{marginTop: "100px"}}></div>
+      <Section>
+        <SocialLinks/>
+      </Section>
+      <div style={{marginTop: "150px"}}></div>
     </div>
   )
 }
